@@ -11,7 +11,7 @@ $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 include device/google/marlin/marlin/BoardConfig.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := havoc_marlin
+PRODUCT_NAME := omni_marlin
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel XL
 TARGET_MANUFACTURER := HTC
