@@ -22,3 +22,7 @@ PRODUCT_COPY_FILES += \
 
 # Google Assistant
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.opa.eligible_device=true
+
+#Permissons
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.control_privapp_permissions=log
