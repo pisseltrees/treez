@@ -8,6 +8,8 @@ $(call inherit-product, vendor/havoc/config/common.mk)
 # Inherit device configuration
 $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 
+include device/google/marlin/device-extra.mk
+
 include device/google/marlin/marlin/BoardConfig.mk
 
 ## Device identifier. This must come after all inclusions
