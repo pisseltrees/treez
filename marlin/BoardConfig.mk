@@ -3,6 +3,9 @@
 # Product-specific compile-time definitions
 #
 
+# Include BoardConfig for inline kernel building
+include device/google/marlin/BoardConfigExtra.mk
+
 TARGET_BOARD_PLATFORM := msm8996
 TARGET_BOOTLOADER_BOARD_NAME := marlin
 TARGET_BOARD_INFO_FILE := device/google/marlin/marlin/board-info.txt
