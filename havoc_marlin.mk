@@ -8,7 +8,7 @@ $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 
-include device/google/marlin/marlin/BoardConfig.mk.mk
+include device/google/marlin/marlin/BoardConfig.mk
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := havoc_marlin
@@ -24,3 +24,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/marlin/marlin:9/PQ1A.190105.004/5148680:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/marlin/marlin-vendor.mk)
+
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+ PRODUCT_BOOT_JARS += \
+    telephony-ext
